@@ -1,0 +1,23 @@
+🧩 Actividad: Ejecutar comandos según el sistema operativo
+
+Enunciado:
+Crea un programa en Python que permita al usuario elegir un sistema operativo y luego escribir un comando para ejecutar en la terminal.
+El programa debe usar subprocess para ejecutar el comando real en el sistema y mostrar el resultado.
+
+Requisitos:
+
+Mostrar un menú con opciones:
+
+Windows
+
+Linux / macOS
+
+Pedir al usuario que elija un sistema.
+
+Usar match-case para determinar la acción según la opción.
+
+Pedir al usuario que escriba un comando.
+
+Ejecutar el comando usando subprocess y mostrar la salida en pantalla.
+
+Si la opción no es válida, mostrar "Opción no válida".

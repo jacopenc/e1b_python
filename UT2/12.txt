@@ -1,0 +1,28 @@
+🧩 Actividad: Selección de navegador y búsqueda
+
+Enunciado:
+Crea un programa en Python que simule la acción de realizar una búsqueda en distintos navegadores web.
+El programa debe permitir al usuario elegir un navegador y luego escribir una palabra o frase para buscar.
+Finalmente, el programa mostrará un mensaje indicando en qué navegador se está realizando la búsqueda.
+
+Requisitos:
+
+Muestra un menú con los siguientes navegadores:
+
+Google Chrome
+
+Mozilla Firefox
+
+Microsoft Edge
+
+Safari
+
+Pide al usuario que escriba el número del navegador que desea usar.
+
+Usa una estructura match-case para determinar cuál fue elegido.
+
+Luego, pide una palabra o frase de búsqueda usando input().
+
+Muestra un mensaje indicando qué búsqueda se está realizando y en qué navegador.
+
+Si la opción no es válida, muestra el mensaje "Navegador no válido".

@@ -1,0 +1,26 @@
+🧩 Actividad: Selección de Sistema Operativo y ejecución de instrucción
+
+Enunciado:
+Crea un programa en Python que simule una consola de comandos básica.
+El programa debe pedir al usuario que elija un Sistema Operativo (S.O.) de una lista y luego solicitarle una instrucción o comando que desee ejecutar.
+Después, el programa mostrará un mensaje indicando qué comando se ejecutaría en el sistema elegido.
+
+Requisitos:
+
+Muestra un menú con tres opciones:
+
+Windows
+
+Linux
+
+macOS
+
+Pide al usuario que ingrese el número correspondiente a su elección.
+
+Usa una estructura match-case para identificar qué S.O. seleccionó.
+
+Luego, pide al usuario que escriba una instrucción (por ejemplo, un comando).
+
+Muestra un mensaje indicando el sistema operativo y el comando introducido.
+
+Si el usuario elige una opción inválida, muestra el mensaje: "Opción no válida".

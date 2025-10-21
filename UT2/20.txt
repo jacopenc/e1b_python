@@ -1,0 +1,18 @@
+🧩 Actividad: Ejecutar comandos según el sistema operativo detectado
+
+Enunciado:
+Crea un programa en Python que permita al usuario ejecutar un comando en su sistema operativo, pero sin preguntarle cuál es: el programa debe detectar automáticamente el sistema operativo y ejecutar el comando correspondiente.
+
+Requisitos:
+
+Usa el módulo platform para detectar el sistema operativo del usuario (Windows, Linux o macOS).
+
+Muestra un mensaje indicando qué sistema fue detectado.
+
+Usa input() para pedir al usuario que escriba un comando que quiera ejecutar en su sistema.
+
+Usa el módulo subprocess para ejecutar el comando y mostrar la salida en pantalla.
+
+Maneja posibles errores con try-except para que el programa no se rompa si el comando no es válido.
+
+Si el sistema operativo no es reconocido, muestra un mensaje: "Sistema operativo no reconocido" y termina el programa.
