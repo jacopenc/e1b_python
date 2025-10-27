@@ -1,0 +1,30 @@
+Enunciado: "Conociendo mi sistema con Python (versión interactiva)"
+
+Crea un programa en Python que utilice el módulo platform para obtener información sobre el sistema.
+El programa debe interactuar con el usuario mediante preguntas (input()), y mostrar la información según lo que elija.
+
+🔹 El programa debe:
+
+Importar el módulo platform.
+
+Preguntar al usuario mediante input() si desea ver la información del sistema.
+
+Si el usuario responde “sí” o “Si”, debe:
+
+Mostrar la versión del sistema operativo.
+
+Mostrar el nombre de la máquina o computadora.
+
+Mostrar la versión de Python.
+
+Mostrar la arquitectura del sistema (32 o 64 bits).
+
+Mostrar toda la información del sistema con platform.uname().
+
+Usar condicionales if, elif, else para:
+
+Detectar si el sistema es Windows, Linux o macOS, y mostrar un mensaje distinto.
+
+Mostrar si el sistema es de 32 o 64 bits, con un mensaje personalizado.
+
+Si el usuario responde “no”, debe mostrar un mensaje de despedida.

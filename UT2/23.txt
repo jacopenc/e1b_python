@@ -1,0 +1,51 @@
+Enunciado: “Menú interactivo de información del sistema con Python”
+
+Crea un programa en Python que permita al usuario consultar diferentes datos sobre el sistema 
+en el que se está ejecutando.
+El programa debe utilizar el módulo platform, condicionales 
+if, elif, else y un bucle while para mostrar la información de manera repetitiva hasta que el usuario decida salir.
+
+🔹 Requisitos del programa:
+
+Importar el módulo platform.
+
+Mostrar un mensaje de bienvenida al usuario.
+
+Usar un bucle while que permita repetir las consultas mientras el usuario no escriba "salir".
+
+Preguntar al usuario mediante un input() si desea ver la información del sistema ("si"), no ("no") o salir ("salir").
+
+Si el usuario responde "si", mostrar un menú con opciones numeradas:
+
+1. Versión del sistema operativo
+2. Nombre de la máquina
+3. Versión de Python
+4. Arquitectura del sistema
+5. Toda la información
+6. Salir del programa
+
+
+El usuario debe escribir un número del 1 al 6.
+
+Según la opción elegida, el programa mostrará la información correspondiente usando las funciones del módulo platform:
+
+platform.version()
+
+platform.node()
+
+platform.python_version()
+
+platform.architecture()
+
+platform.uname()
+
+Si el usuario escribe un número fuera del rango, mostrar el mensaje:
+
+Opción no válida. Por favor, elige entre 1 y 6.
+
+
+Si el usuario responde "no", mostrar un mensaje de despedida y continuar preguntando si desea consultar información de nuevo.
+
+Si el usuario escribe "salir", terminar el programa mostrando un mensaje de despedida.
+
+El programa debe ser interactivo y permitir varias consultas seguidas hasta que el usuario decida salir.

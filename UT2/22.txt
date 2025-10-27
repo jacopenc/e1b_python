@@ -1,0 +1,41 @@
+Enunciado: “Menú de información del sistema con Python”
+
+Crea un programa en Python que permita al usuario consultar diferentes datos sobre el sistema en el que se está ejecutando.
+El programa debe utilizar el módulo platform y condicionales if, elif, else para mostrar la información solicitada.
+
+🔹 Requisitos del programa:
+
+Importar el módulo platform.
+
+Preguntar al usuario, mediante un input(), si desea ver la información del sistema.
+
+Si el usuario responde "si" o "SI", debe aparecer un menú con las siguientes opciones:
+
+¿Qué información quieres ver?
+1. Versión del sistema operativo
+2. Nombre de la máquina
+3. Versión de Python
+4. Arquitectura del sistema
+5. Toda la información
+
+
+El usuario debe escribir un número del 1 al 5.
+
+Según la opción elegida, el programa mostrará la información correspondiente usando las funciones del módulo platform:
+
+platform.version()
+
+platform.node()
+
+platform.python_version()
+
+platform.architecture()
+
+platform.uname()
+
+Si el usuario escribe un número fuera del rango (por ejemplo, 0 o 6), el programa mostrará el mensaje:
+
+Opción no válida.
+
+
+Si el usuario responde "no", el programa debe mostrar un mensaje de despedida.
