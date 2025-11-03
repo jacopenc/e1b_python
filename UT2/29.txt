@@ -1,0 +1,46 @@
+Enunciado del ejercicio
+
+Título: Creación de directorios y listado recursivo según el sistema operativo
+
+Objetivo:
+    Practicar el manejo de directorios en Python utilizando el módulo os y detectar el sistema operativo con platform. El alumno aprenderá a crear directorios, navegar entre ellos y listar su contenido de forma recursiva, adaptándose a Windows, Linux o macOS.
+
+Descripción del ejercicio:
+
+    Detecta el sistema operativo y muestra su nombre y versión.
+
+    Define un directorio principal llamado "directorio_padre" y un subdirectorio dentro de él llamado "subdirectorio".
+
+    Crea el directorio principal si no existe.
+
+    Accede al directorio principal y crea el subdirectorio dentro de él.
+
+    Vuelve al directorio que contiene al directorio principal.
+
+    Lista de forma recursiva el contenido del directorio principal:
+
+    En Windows: usar dir /s
+
+    En Linux/macOS: usar ls -lR
+
+Requisitos:
+
+    Utilizar os.mkdir() para crear directorios.
+
+    Comprobar si un directorio ya existe antes de crearlo (os.path.exists()).
+
+    Cambiar de directorio con os.chdir().
+
+    Obtener la ruta actual con os.getcwd().
+
+    Usar os.system() para ejecutar comandos de listado recursivo según el sistema operativo.
+
+Salida esperada:
+
+    Información del sistema operativo.
+
+    Confirmación de creación de los directorios o mensaje si ya existen.
+
+    Directorio actual después de cada cambio.
+
+    Listado completo y recursivo del contenido del directorio principal.

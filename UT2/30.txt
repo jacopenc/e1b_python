@@ -1,0 +1,24 @@
+Enunciado
+
+Título: Crear varios subdirectorios y listar recursivamente sin usar bucles
+
+Objetivo:
+Practicar la creación de directorios y navegación entre ellos en Python usando os, detectando el sistema operativo con platform, sin usar bucles.
+
+Descripción del ejercicio:
+
+    Detecta el sistema operativo y muestra su nombre y versión.
+
+    Define un directorio principal "proyecto" y dentro de él dos subdirectorios "docs" y "src".
+
+    Dentro de "src" crea un subdirectorio "modulos".
+
+    Cambia de directorio mostrando la ruta actual en cada paso.
+
+    Vuelve al directorio original desde donde se ejecutó el script.
+
+Lista de forma recursiva todo el contenido del directorio "proyecto" según el sistema operativo:
+
+    Windows: dir /s
+
+    Linux/macOS: ls -lR
