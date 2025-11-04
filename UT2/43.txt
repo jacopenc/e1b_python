@@ -1,0 +1,23 @@
+Enunciado del ejercicio
+
+    Crea un programa en Python que permita al usuario gestionar directorios y archivos de manera interactiva. El programa debe cumplir los siguientes requisitos:
+
+    Pedir al usuario el nombre de una carpeta principal y crearla en el sistema de archivos.
+
+    Permitir al usuario añadir subcarpetas de manera ilimitada, usando un bucle while. El usuario puede escribir "salir" para detener la creación de subniveles.
+
+    Una vez creada la ruta completa, el programa debe ofrecer un menú interactivo con las siguientes opciones:
+
+        Crear o añadir archivos: el usuario puede crear un archivo dentro de la carpeta final y escribir contenido. Si el archivo ya existe, puede elegir entre sobrescribirlo o añadir contenido.
+
+        Listar archivos y carpetas: mostrar el contenido del directorio final de manera clara, con separación visual usando guiones.
+
+        Renombrar archivos: permitir cambiar el nombre de un archivo existente, indicando la ruta completa del archivo viejo y el nuevo.
+
+    Salir: terminar el programa.
+
+    Usar la librería os para todas las operaciones relacionadas con creación de directorios, archivos y renombrado.
+
+    Garantizar que el programa sea totalmente interactivo y lineal, sin usar funciones ni listas.
+
+Objetivo: El usuario debe poder crear estructuras de carpetas y archivos de forma flexible y segura, explorando las funcionalidades básicas del módulo os.
