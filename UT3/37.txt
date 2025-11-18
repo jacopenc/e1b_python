@@ -1,0 +1,12 @@
+Enunciado del ejercicio:
+Partiendo de nombres de varios estudiantes y sus respectivas calificaciones:
+calificaciones = {
+    "Ana": 8.5,
+    "Luis": 7.0,
+    "María": 9.2,
+    "Carlos": 6.8
+}
+Escribir un programa en Python que haga lo siguiente utilizando el método .items():
+Recorra el diccionario y muestre por pantalla el nombre de cada estudiante junto con su calificación.
+Calcule e imprima la calificación media de todos los estudiantes.
+Muestra únicamente los estudiantes que han obtenido una calificación mayor o igual a 8 y muéstralo por pantalla.
