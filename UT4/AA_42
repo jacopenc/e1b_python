@@ -1,0 +1,78 @@
+import os
+import platform
+
+# ------------------ FUNCIONES ------------------
+
+def info_sistema():
+    so = platform.system()
+    version = platform.version()
+    print("Sistema operativo:", so)
+    print("Versión:", version)
+    return so
+
+
+def mostrar_directorio_actual():
+    ruta = os.getcwd()
+    print("Directorio actual:", ruta)
+    return ruta
+
+
+def crear_directorio(nombre):
+    if not os.path.exists(nombre):
+        os.mkdir(nombre)
+        print(f"Directorio '{nombre}' creado.")
+    else:
+        print(f"Directorio '{nombre}' ya existe.")
+
+
+def cambiar_directorio(ruta):
+    os.chdir(ruta)
+    print("Directorio cambiado a:", os.getcwd())
+
+
+def listar_recursivo(nombre_directorio, sistema_op):
+    print("\nListado recursivo de:", nombre_directorio)
+    if sistema_op == "Windows":
+        os.system("dir /s")
+    elif sistema_op in ("Linux", "Darwin"):
+        os.system("ls -lR")
+    else:
+        print("Sistema operativo no reconocido.")
+
+
+# ------------------ PROGRAMA PRINCIPAL ------------------
+
+def main():
+    # 1. Información del sistema
+    sistema_op = info_sistema()
+
+    # 2. Guardar directorio original
+    dir_original = mostrar_directorio_actual()
+
+    # 3. Crear directorio "proyecto"
+    dir_proyecto = "proyecto"
+    crear_directorio(dir_proyecto)
+
+    # 4. Entrar en "proyecto"
+    cambiar_directorio(dir_proyecto)
+
+    # 5. Crear subdirectorios
+    crear_directorio("docs")
+    crear_directorio("src")
+
+    # 6. Entrar en "src" y crear "modulos"
+    cambiar_directorio("src")
+    crear_directorio("modulos")
+
+    # 7. Volver al directorio original
+    cambiar_directorio(dir_original)
+    print("Regresamos al directorio original.")
+
+    # 8. Listado recursivo del directorio "proyecto"
+    listar_recursivo(dir_proyecto, sistema_op)
+
+    print("\nEjecución completada.")
+
+
+if __name__ == "__main__":
+    main()

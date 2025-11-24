@@ -1,0 +1,106 @@
+import os
+
+# ------------------ FUNCIONES ------------------
+
+def crear_carpeta_principal():
+    ruta = input("Escribe el nombre de la carpeta principal: ")
+    os.makedirs(ruta, exist_ok=True)
+    print("Carpeta principal creada:", ruta, "\n")
+    return ruta
+
+
+def crear_subniveles(ruta):
+    """Permite añadir subcarpetas de forma interactiva."""
+    ruta_actual = ruta
+    while True:
+        nivel = input("Escribe el nombre de un subnivel (o 'salir' para terminar): ")
+        if nivel.lower() == "salir":
+            break
+        ruta_actual = os.path.join(ruta_actual, nivel)
+        os.makedirs(ruta_actual, exist_ok=True)
+        print("Subnivel creado:", ruta_actual)
+    return ruta_actual
+
+
+def crear_o_añadir_archivo(ruta_final):
+    nombre = input("Nombre del archivo: ")
+    ruta_archivo = os.path.join(ruta_final, nombre)
+
+    # Decidir modo de apertura
+    if os.path.exists(ruta_archivo):
+        modo_input = input("El archivo ya existe. 's' para sobrescribir, 'a' para añadir: ").lower()
+        if modo_input == "s":
+            modo = "w"
+        elif modo_input == "a":
+            modo = "a"
+        else:
+            print("Opción no válida. Acción cancelada.\n")
+            return
+    else:
+        modo = "w"
+
+    # Escribir archivo
+    with open(ruta_archivo, modo) as f:
+        contenido = input("Escribe el contenido para el archivo: ")
+        f.write(contenido + "\n")
+
+    print("Archivo guardado correctamente.\n")
+
+
+def listar_contenido(ruta_final):
+    print("Contenido del último nivel:")
+    print(os.listdir(ruta_final), "\n")
+
+
+def renombrar_archivo():
+    ruta_vieja = input("Ruta completa del archivo a renombrar: ")
+    if not os.path.exists(ruta_vieja):
+        print("El archivo no existe.\n")
+        return
+
+    ruta_nueva = input("Introduce el nuevo nombre (con ruta si cambia de carpeta): ")
+
+    os.rename(ruta_vieja, ruta_nueva)
+    print("Archivo renombrado correctamente.\n")
+
+
+def mostrar_menu():
+    print("Opciones:")
+    print("1. Crear o añadir archivo")
+    print("2. Listar archivos de la carpeta final")
+    print("3. Renombrar archivo")
+    print("4. Salir")
+    return input("Elige una opción (1-4): ")
+
+
+# ------------------ PROGRAMA PRINCIPAL ------------------
+
+def main():
+    ruta_principal = crear_carpeta_principal()
+    ruta_final = crear_subniveles(ruta_principal)
+
+    print("\nRuta final creada:", ruta_final)
+    print("-----\n")
+
+    while True:
+        opcion = mostrar_menu()
+
+        if opcion == "1":
+            crear_o_añadir_archivo(ruta_final)
+
+        elif opcion == "2":
+            listar_contenido(ruta_final)
+
+        elif opcion == "3":
+            renombrar_archivo()
+
+        elif opcion == "4":
+            print("Saliendo del programa...")
+            break
+
+        else:
+            print("Opción no válida.\n")
+
+
+if __name__ == "__main__":
+    main()
