@@ -1,0 +1,39 @@
+Enunciado:
+
+Crea una clase Persona con los siguientes atributos:
+
+    nombre (cadena)
+
+    apellido (cadena)
+
+    dni (cadena o número)
+
+La clase Persona debe tener un método:
+
+    mostrar_info(): muestra el nombre completo y el DNI.
+
+Crea una clase CuentaBancaria con los siguientes atributos:
+
+    titular (un objeto de tipo Persona)
+
+    saldo (número, cantidad de dinero)
+
+La clase CuentaBancaria debe tener los siguientes métodos:
+
+    ingresar(cantidad): aumenta el saldo y muestra el saldo actual.
+
+    retirar(cantidad): disminuye el saldo si hay suficiente dinero; si no, muestra “Saldo insuficiente”.
+
+    mostrar_info(): muestra la información del titular (usando el método de la clase Persona) y el saldo.
+
+En el programa principal:
+
+    Crea un objeto Persona como titular.
+
+    Crea un objeto CuentaBancaria asociando el titular.
+
+    Realiza operaciones de ingreso y retirada de dinero.
+
+    Muestra la información de la cuenta después de cada operación.
+
+

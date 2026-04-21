@@ -1,0 +1,32 @@
+Enunciado: “Gestión de Libros en una Biblioteca”
+
+Crea una clase llamada Libro que tenga los siguientes atributos:
+
+    titulo (título del libro)
+
+    autor (nombre del autor)
+
+    prestado (valor booleano que indique si el libro está prestado; comienza como False)
+
+La clase debe tener los siguientes métodos:
+
+    prestar(): cambia el estado del libro a prestado (True). Si ya estaba prestado, muestra un mensaje “El libro ya está prestado”.
+
+    devolver(): cambia el estado del libro a no prestado (False). Si ya estaba disponible, muestra “El libro ya está disponible”.
+
+    mostrar_info(): muestra el título, autor y si está prestado o disponible.
+
+Crea tres objetos de la clase Libro con distintos títulos y autores.
+
+Realiza las siguientes acciones:
+
+    Presta uno de los libros y comprueba el estado.
+
+    Intenta prestar un libro que ya está prestado para comprobar el mensaje.
+
+    Devuelve un libro y muestra su información final.
+
+
+Extra (opcional):
+
+    Añade un método cambiar_autor(nuevo_autor) para actualizar el autor del libro.
